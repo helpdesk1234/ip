@@ -35,9 +35,6 @@ public class DukeController {
         try {
             storage.makeDirectory();
             taskList = storage.readData();
-            ui.printSavedFileLocation(storage.getHomePath());
-            ui.printNewLine();
-
         } catch (IOException e){
             ui.printExceptionMessage(e);
             ui.printNewLine();
